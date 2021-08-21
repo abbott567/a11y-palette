@@ -1,0 +1,27 @@
+$black: #0b0c0c;
+$dark-grey: #505a5f;
+$mid-grey: #b1b4b6;
+$light-grey: #f3f2f1;
+$white: #ffffff;
+
+$focus-colour: #ffdd00;
+$focus-text-colour: #0b0c0c;
+
+$link-colour: #1d70b8;
+$link-hover-colour: #003078;
+$link-visited-colour: #4c2c92;
+$link-active-colour: #0b0c0c;
+$link-focus-colour: #0b0c0c;
+
+a {
+  color: $link-colour;
+  &:hover {
+    color: $link-hover-colour;
+  }
+  &:visited {
+    color: $link-visited-colour;
+  }
+  &:active {
+    color: $link-active-colour;
+  }
+}

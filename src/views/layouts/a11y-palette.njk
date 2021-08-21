@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A11y Palette - Accessible Colour Palette</title>
+    <meta name="description" content="{{title}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      {% include 'public/css/styles.css' %}
+    </style>
+  </head>
+
+  <body tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
+      <div class="container">
+        <h1 class="heading-xl">A11y Palette</h1>
+        
+        <p>
+          A11y Palette is a set of colour themes by <a href="https://twitter.com/">
+          Craig Abbott</a> which meet the 4.5:1 colour ratio for the <a href="https://www.w3.org/TR/WCAG21/">
+          Web Content Accessibility Guidelines (WCAG) 2.1</a>. To find out more 
+          about this project, you can <a href="https://github.com/abbott567/a11y-palette">
+          see A11y Palette on GitHub</a>.
+        </p>
+        
+        {% for colour in colours %}
+          <div class="theme">
+            <div class="row">
+              <div class="full-width theme__mid--{{colour.name}}">
+                <h2 class="heading-l">{{colour.name|capitalize}}</h2>
+              </div>
+            </div>
+            <div class="row">
+              {% for shade in colour.shades %}
+                <div class="col theme__{{shade.name}}--{{colour.name}}">
+                  <h3 class="heading-m">{{shade.name|capitalize}}<span class="visually-hidden"> {{colour.name}}</span></h3>
+                  <dl>
+                    <dt>
+                      Contrast<span class="visually-hidden"> ratio</span>:
+                    </dt>
+                    <dd>
+                      {{shade.contrast}}
+                    </dd>
+                    {% for value in shade.values %}
+                      <dt>
+                        {{value.prettyName|capitalize}}
+                      </dt>
+                      <dd>
+                        Hex: {{value.hex}}
+                      </dd>
+                      <dd>
+                        RGB: {{value.rgb.red}}, {{value.rgb.blue}}, {{value.rgb.green}}
+                      </dd>
+                    {% endfor %}
+                  </dl>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </main>
+  </body>
+</html>

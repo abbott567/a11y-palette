@@ -1,0 +1,7 @@
+a:focus {
+  outline: 3px solid transparent;
+  color: $link-focus-colour;
+  background-color: $focus-colour;
+  box-shadow: 0 -2px $focus-colour, 0 4px $black;
+  text-decoration: none;
+}

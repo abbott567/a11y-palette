@@ -1,0 +1,39 @@
+html {
+  font-family: sans-serif;
+}
+.heading-xl {
+  font-size: 3rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.heading-l {
+  font-size: 2.25rem;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+.heading-m {
+  font-size: 1.5rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.heading-s {
+  font-size: 1.1875rem;
+}
+p {
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+  margin-bottom: 2em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}

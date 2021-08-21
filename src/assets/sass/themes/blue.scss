@@ -1,0 +1,20 @@
+$darkest-text: #ffffff;
+$darkest-background: #003078;
+
+$dark-text: #ffffff;
+$dark-background: #134673;
+
+$mid-text: #ffffff;
+$mid-background: #1d70b8;
+
+$light-text: #000000;
+$light-background: #2b9dfe;
+
+$lightest-text: #000000;
+$lightest-background: #69b9ff;
+
+.theme__darkest--blue { color: $darkest-text; background-color: $darkest-background; }
+.theme__dark--blue { color: $dark-text; background-color: $dark-background; }
+.theme__mid--blue { color: $mid-text; background-color: $mid-background; }
+.theme__light--blue { color: $light-text; background-color: $light-background; }
+.theme__lightest--blue { color: $lightest-text; background-color: $lightest-background; }

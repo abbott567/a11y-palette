@@ -1,0 +1,20 @@
+$darkest-text: #ffffff;
+$darkest-background: #891e4f;
+
+$dark-text: #ffffff;
+$dark-background: #b02666;
+
+$mid-text: #ffffff;
+$mid-background: #d3317c;
+
+$light-text: #000000;
+$light-background: #db5794;
+
+$lightest-text: #000000;
+$lightest-background: #f983b9;
+
+.theme__darkest--pink { color: $darkest-text; background-color: $darkest-background; }
+.theme__dark--pink { color: $dark-text; background-color: $dark-background; }
+.theme__mid--pink { color: $mid-text; background-color: $mid-background; }
+.theme__light--pink { color: $light-text; background-color: $light-background; }
+.theme__lightest--pink { color: $lightest-text; background-color: $lightest-background; }
